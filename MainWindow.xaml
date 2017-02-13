@@ -1,0 +1,24 @@
+﻿<Window x:Class="ListenMitDerEITEinstieg.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ListenMitDerEITEinstieg"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <DockPanel>
+            <StackPanel
+                DockPanel.Dock="Top"
+                x:Name="stackPanelControls" Orientation="Horizontal">
+                <Button x:Name="buttonProdukte" Click="buttonProdukte_Click">Produkte</Button>
+                <Button x:Name="buttonAnzahlTeureProdukte" Click="buttonAnzahlTeureProdukte_Click">Anzahl teurer Produkte</Button>
+                <Button x:Name="buttonMaximalerPreis" Click="buttonMaximalerPreis_Click">Max Preis Produkte</Button>
+                <Button x:Name="aboveAverageButton" Click="buttonAboveAverage_Click" Content="&gt; Avg Produkte"/>
+            </StackPanel>
+            <ListBox x:Name="listBoxResults" SelectionChanged="listBoxResults_SelectionChanged">
+                
+            </ListBox>
+        </DockPanel>
+    </Grid>
+</Window>
